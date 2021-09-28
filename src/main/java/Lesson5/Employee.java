@@ -70,15 +70,12 @@ public class Employee {
 
 
     public String printInfoEmployee() {
-        return "Employee " +
-                "name: " + name + '\n' +
+        return "Employee " + '\n' +
+                " name: " + name + '\n' +
                 " post: " + post + '\n' +
                 " email: " + email + '\n' +
                 " numberPhone: " + numberPhone + '\n' +
                 " salary: " + salary + '\n' +
                 " age: " + age ;
     }
-
-
-
 }
