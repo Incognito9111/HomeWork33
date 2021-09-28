@@ -3,12 +3,13 @@ package Lesson5;
 
 public class Employee {
 
-    private String name;
-    private String post;
-    private String email;
-    private String numberPhone;
-    private int salary;
-    private int age;
+
+    public String name;
+    public String post;
+    public String email;
+    public String numberPhone;
+    public int salary;
+    public int age;
 
     public Employee(String name, String post, String email, String numberPhone, int salary, int age) {
         this.name = name;
@@ -17,19 +18,65 @@ public class Employee {
         this.numberPhone = numberPhone;
         this.salary = salary;
         this.age = age;
-
     }
 
-    public static void main(String[] args) {
-        Person[] persArray = new Person[5];
-        persArray[0] = new Person("Ivan", "Engineer", "Iva991@mail.ru", "89288842511", 90000, 33);
-        persArray[1] = new Person("Sergey", "SysAdmin", "serz-33@mail.ru", "89286634521", 50000, 45);
-        persArray[2] = new Person("Stas", "Java Developer", "stanislav89@gmail.ru", "89289921177", 140000, 32);
-        persArray[3] = new Person("Bogdan", "DevOps Developer", "Bodya@mail.ru", "89996523488", 120000, 26);
-        persArray[4] = new Person("John", "OwnerCompany", "JohnArm@gmail.ru", "89281113352", 250000, 51);
-        for (int i = 0; i < persArray.length; i++) {
-            System.out.println(persArray[i]);
-        }
+    public String getName() {
+        return name;
+    }
+    public void setName(String post) {
+        this.name = name;
+    }
+
+
+    public String getPost() {
+        return post;
+    }
+    public void setPost(String post) {
+        this.name = post;
+    }
+
+
+    public String getEmail() {
+        return email;
+    }
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+
+    public String getNumberPhone() {
+        return numberPhone;
+    }
+    public void setNumberPhone(String numberPhone) {
+        this.numberPhone = numberPhone;
+    }
+
+
+    public int getSalary() {
+        return salary;
+    }
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
+
+    public int getAge() {
+        return age;
+    }
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+
+
+    public String printInfoEmployee() {
+        return "Employee " +
+                "name: " + name + '\n' +
+                " post: " + post + '\n' +
+                " email: " + email + '\n' +
+                " numberPhone: " + numberPhone + '\n' +
+                " salary: " + salary + '\n' +
+                " age: " + age ;
     }
 
 
